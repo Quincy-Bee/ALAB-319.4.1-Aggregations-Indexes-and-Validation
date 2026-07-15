@@ -9,11 +9,18 @@ const app = express();
 
 app.use(express.json());
 
+// Routes
 app.use("/grades", gradesRouter);
 
+
 mongoose.connect(process.env.URI)
-    .then(() => {
+    .then(async () => {
         console.log("MongoDB connected");
+
+        // Create/sync indexes from Grade model
+        await mongoose.connection.syncIndexes();
+
+        console.log("Indexes synced");
 
         app.listen(process.env.PORT, () => {
             console.log(`Server running on port ${process.env.PORT}`);
