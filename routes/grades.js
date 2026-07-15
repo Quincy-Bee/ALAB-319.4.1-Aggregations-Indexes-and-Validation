@@ -14,4 +14,8 @@ router.get("/", async (req, res) => {
     }
 });
 
+router.get("/", (req, res) => {
+    res.send("Grades route working");
+});
+
 export default router;
