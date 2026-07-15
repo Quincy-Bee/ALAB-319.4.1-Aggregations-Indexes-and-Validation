@@ -1,0 +1,30 @@
+{
+  "name": "alab-319.4.1aggregations-indexes-and-validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quincy-Bee/ALAB-319.4.1-Aggregations-Indexes-and-Validation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Quincy-Bee/ALAB-319.4.1-Aggregations-Indexes-and-Validation/issues"
+  },
+  "homepage": "https://github.com/Quincy-Bee/ALAB-319.4.1-Aggregations-Indexes-and-Validation#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
